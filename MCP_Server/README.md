@@ -41,13 +41,10 @@ It was created with **Visual Studio 2022** and targets **.NET Framework 4.8**.
 MCP_Server/
 |
 
-|
-
 ├─ waabe_navi_mcp/ → UI integration (ribbon & commands)
 
 ├─ waabe_navi_mcp_server/ → Backend logic (RPC server, controllers, services)
 
-|
 
 └─ waabe_navi_shared/ → Shared infrastructure (logging, registry, ribbon constants)
 
