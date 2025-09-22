@@ -5,7 +5,7 @@
 ## Object of Investigation
 The object of this Proof of Concept was **Autodesk Navisworks Manage 2026**.  
 This software was selected because:  
-- It can open and process a wide range of file formats (e.g., NWD, NWC, IFC, RVT)  
+- It can open and process a wide range of file formats (e.g. IFC)  
 - MCP has so far rarely been applied in this environment  
 - The Navisworks 2026 API was an **unfamiliar context**, making it ideal to evaluate accessibility and implementation effort  
 
