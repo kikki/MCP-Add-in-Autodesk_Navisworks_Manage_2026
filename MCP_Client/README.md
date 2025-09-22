@@ -14,7 +14,6 @@ It contains the manifest, icons, and definition files required to describe and r
 
 ```
 
----
 
 ## Workflow with DXT
 
