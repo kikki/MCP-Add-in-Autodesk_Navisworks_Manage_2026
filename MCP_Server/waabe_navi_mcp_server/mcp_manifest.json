@@ -1,0 +1,27 @@
+{
+  "name": "waabe_navi_mcpserver",
+  "version": "1.0.0",
+  "framework": "net48",
+  "navisworks": "2026",
+  "rpc": {
+    "model": [
+      "get_model_overview",
+      "get_units_and_tolerances"
+    ],
+    "search": [
+      "get_element_count_by_category",
+      "list_properties_for_item"
+    ],
+    "selection": [
+      "clear_selection",
+      "get_current_selection_snapshot"
+    ],
+    "visibility": [
+    ],
+    "export": [
+    ],
+    "system": [
+      "ping" 
+    ]
+  }
+}

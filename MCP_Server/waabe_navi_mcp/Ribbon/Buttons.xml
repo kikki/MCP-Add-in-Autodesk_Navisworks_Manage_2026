@@ -1,0 +1,19 @@
+﻿<Buttons>
+	<Button>
+		<Id>BTN_MCP</Id>
+		<Text>MCP Info</Text>
+		<Description>Hauptbutton</Description>
+		<LargeImage>icon32x32.png</LargeImage>
+		<SmallImage>icon16x16.png</SmallImage>
+		<Panel>MCP</Panel>
+	</Button>
+	<Button>
+		<Id>BTN_MCP_SERVER</Id>
+		<Text>Server starten</Text>
+		<Description>MCP Server starten/stoppen</Description>
+		<LargeImage>icon32x32.png</LargeImage>
+		<SmallImage>icon16x16.png</SmallImage>
+		<Panel>Server</Panel>
+	</Button>
+	
+</Buttons>

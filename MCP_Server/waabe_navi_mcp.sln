@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "waabe_navi", "waabe_navi_mcp\waabe_navi.csproj", "{0831E15B-8602-4DFC-9A54-03E741F7B042}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8BDF856D-859E-4762-AFE2-048CACEAEB7A} = {8BDF856D-859E-4762-AFE2-048CACEAEB7A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "waabe_navi_shared", "waabe_navi_shared\waabe_navi_shared.csproj", "{8BDF856D-859E-4762-AFE2-048CACEAEB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "waabe_navi_mcp_server", "waabe_navi_mcp_server\waabe_navi_mcp_server.csproj", "{8F649E51-8419-4A07-8885-AA766FA96452}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0831E15B-8602-4DFC-9A54-03E741F7B042}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{0831E15B-8602-4DFC-9A54-03E741F7B042}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{0831E15B-8602-4DFC-9A54-03E741F7B042}.Debug|x64.ActiveCfg = Debug|x64
+		{0831E15B-8602-4DFC-9A54-03E741F7B042}.Debug|x64.Build.0 = Debug|x64
+		{0831E15B-8602-4DFC-9A54-03E741F7B042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0831E15B-8602-4DFC-9A54-03E741F7B042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0831E15B-8602-4DFC-9A54-03E741F7B042}.Release|x64.ActiveCfg = Release|x64
+		{0831E15B-8602-4DFC-9A54-03E741F7B042}.Release|x64.Build.0 = Release|x64
+		{8BDF856D-859E-4762-AFE2-048CACEAEB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BDF856D-859E-4762-AFE2-048CACEAEB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BDF856D-859E-4762-AFE2-048CACEAEB7A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8BDF856D-859E-4762-AFE2-048CACEAEB7A}.Debug|x64.Build.0 = Debug|Any CPU
+		{8BDF856D-859E-4762-AFE2-048CACEAEB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BDF856D-859E-4762-AFE2-048CACEAEB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BDF856D-859E-4762-AFE2-048CACEAEB7A}.Release|x64.ActiveCfg = Release|Any CPU
+		{8BDF856D-859E-4762-AFE2-048CACEAEB7A}.Release|x64.Build.0 = Release|Any CPU
+		{8F649E51-8419-4A07-8885-AA766FA96452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F649E51-8419-4A07-8885-AA766FA96452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F649E51-8419-4A07-8885-AA766FA96452}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8F649E51-8419-4A07-8885-AA766FA96452}.Debug|x64.Build.0 = Debug|Any CPU
+		{8F649E51-8419-4A07-8885-AA766FA96452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F649E51-8419-4A07-8885-AA766FA96452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F649E51-8419-4A07-8885-AA766FA96452}.Release|x64.ActiveCfg = Release|Any CPU
+		{8F649E51-8419-4A07-8885-AA766FA96452}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D029E89-839D-4EC9-BB1C-0DD1E01BA403}
+	EndGlobalSection
+EndGlobal

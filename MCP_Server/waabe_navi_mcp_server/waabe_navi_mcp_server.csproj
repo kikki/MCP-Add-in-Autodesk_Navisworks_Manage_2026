@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F649E51-8419-4A07-8885-AA766FA96452}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>waabe_navi_mcp_server</RootNamespace>
+    <AssemblyName>waabe_navi_mcp_server</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdWindows">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\AdWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Api">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\Autodesk.Navisworks.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Automation">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\Autodesk.Navisworks.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Clash">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\Autodesk.Navisworks.Clash.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.ComApi">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\Autodesk.Navisworks.ComApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Controls, Version=23.0.0.0, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\Autodesk.Navisworks.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Interop.ComApi">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\Autodesk.Navisworks.Interop.ComApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Interop.ComApiAutomation">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\Autodesk.Navisworks.Interop.ComApiAutomation.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Navisworks.Clash.Mfc.Interop">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\Navisworks.Clash.Mfc.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Navisworks.Clash.Plugin">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\Navisworks.Clash.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="navisworks.gui.roamer">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2026\navisworks.gui.roamer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\ClashDtos.cs" />
+    <Compile Include="Contracts\Enums.cs" />
+    <Compile Include="Contracts\Queries.cs" />
+    <Compile Include="Contracts\Results.cs" />
+    <Compile Include="Contracts\RpcEnvelope.cs" />
+    <Compile Include="Controllers\ClashController.cs" />
+    <Compile Include="Controllers\ExportController.cs" />
+    <Compile Include="Controllers\ModelController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\SelectionController.cs" />
+    <Compile Include="Controllers\SystemController.cs" />
+    <Compile Include="Controllers\VisibilityController.cs" />
+    <Compile Include="Dialogs\PortConfigDialog.xaml.cs">
+      <DependentUpon>PortConfigDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Caching\ResponseCache.cs" />
+    <Compile Include="Infrastructure\ErrorHandlingMiddleware.cs" />
+    <Compile Include="Infrastructure\LoggingExtensions.cs" />
+    <Compile Include="Infrastructure\ManifestBuilder.cs" />
+    <Compile Include="Infrastructure\RpcHost.cs" />
+    <Compile Include="Infrastructure\RpcRouter.cs" />
+    <Compile Include="Infrastructure\Settings.cs" />
+    <Compile Include="Mapping\DtoMappers.cs" />
+    <Compile Include="Mapping\RpcMap.cs" />
+    <Compile Include="Plugins\MCPServerRegistrar.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Backends\BackendResolver.cs" />
+    <Compile Include="Services\Backends\FallbackBackend.cs" />
+    <Compile Include="Services\Backends\IWaabeNavisworksBackend.cs" />
+    <Compile Include="Services\Backends\ReflectionBackend.cs" />
+    <Compile Include="Services\Backends\UiThread.cs" />
+    <Compile Include="Services\IExportService.cs" />
+    <Compile Include="Services\IModelQueryService.cs" />
+    <Compile Include="Services\Implementations\ExportService.cs" />
+    <Compile Include="Services\Implementations\ModelQueryService.cs" />
+    <Compile Include="Services\Implementations\SearchService.cs" />
+    <Compile Include="Services\Implementations\SelectionService.cs" />
+    <Compile Include="Services\Implementations\VisibilityService.cs" />
+    <Compile Include="Services\ISearchService.cs" />
+    <Compile Include="Services\ISelectionService.cs" />
+    <Compile Include="Services\IVisibilityService.cs" />
+    <Compile Include="Services\MCPServer.cs" />
+    <Compile Include="Services\SettingsManager.cs" />
+    <Compile Include="Telemetry\EventSourceIds.cs" />
+    <Compile Include="Telemetry\Metrics.cs" />
+    <Compile Include="Validation\FluentRules.cs" />
+    <Compile Include="Validation\Validators.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\waabe_navi_mcp\waabe_navi.csproj">
+      <Project>{0831e15b-8602-4dfc-9a54-03e741f7b042}</Project>
+      <Name>waabe_navi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\waabe_navi_shared\waabe_navi_shared.csproj">
+      <Project>{8bdf856d-859e-4762-afe2-048caceaeb7a}</Project>
+      <Name>waabe_navi_shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mcp_manifest.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Dialogs\PortConfigDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>REM ================== Post-Build: waabe_navi_mcpserver ==================
+REM Bundle-Zielpfade (anpassbar)
+set NW_VER=v23
+set BUNDLE=%25APPDATA%25\Autodesk\ApplicationPlugins\waabe_navi_mcp.bundle\
+set CONTENT=%25BUNDLE%25Contents\%25NW_VER%25\
+set SETTINGS=%25BUNDLE%25Settings\
+
+REM Verzeichnisse sicherstellen
+if not exist "%25CONTENT%25"  mkdir "%25CONTENT%25"
+if not exist "%25SETTINGS%25" mkdir "%25SETTINGS%25"
+
+REM ------------------ Manifest kopieren ------------------
+REM Hinweis: Wir legen das mcp_manifest.json wie bisher in %25CONTENT%25 ab
+if exist "$(ProjectDir)mcp_manifest.json" (
+    xcopy "$(ProjectDir)mcp_manifest.json" "%25CONTENT%25\" /Y /Q
+) else (
+    echo [WARN] Manifest mcp_manifest.json nicht gefunden.
+)
+
+REM ------------------ Haupt-DLL kopieren ------------------
+REM Kopiert die gebaute waabe_navi_mcp_server.dll in das Bundle
+xcopy "$(TargetPath)" "%25CONTENT%25\" /Y /Q
+
+
+
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

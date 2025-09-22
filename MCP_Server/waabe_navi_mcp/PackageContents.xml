@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage
+  SchemaVersion="1.0"
+  Name="waabe_navi_mcp"
+  AppVersion="1.0.0"
+  Description="Navisworks AddIn mit Ribbon, Button-Handler und XML-Konfiguration"
+  Author="WAABE"
+  ProductCode="{0831e15b-8602-4dfc-9a54-03e741f7b042}">
+
+	<CompanyDetails Name="WAABE" Url="https://www.waabe.com" Email="kontakt@waabe.com"/>
+
+	<Components Description="Navisworks 2026">
+		<RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw23" SeriesMax="Nw23"/>
+		
+		<ComponentEntry
+		  AppName="waabe_navi_mcp"
+		  AppType="ManagedPlugin"
+		  Version="1.0.0"
+		  ModuleName="Contents\v23\waabe_navi_mcp.dll"
+		  AppDescription="Ribbon, Button-Handler und Dateiliste für Navisworks 2026"/>
+		<ComponentEntry
+		  AppName="waabe_navi_chatfenster"
+		  AppType="ManagedPlugin"
+		  Version="1.0.0"
+		  ModuleName="Contents\v23\waabe_navi_chatfenster.dll"
+		  AppDescription="Dockpane Chatfenster für Navisworks 2026"/>
+		<ComponentEntry
+		  AppName="waabe_navi_mcp_server"
+		  AppType="ManagedPlugin"
+		  Version="1.0.0"
+		  ModuleName="Contents\v23\waabe_navi_mcp_server.dll"
+		  AppDescription="MCP Server für Navisworks 2026"/>
+
+		<ComponentEntry
+		  AppName="waabe_navi_mcpserver"
+		  AppType="ManagedPlugin"
+		  Version="1.0.0"
+		  ModuleName="Contents\v23\waabe_navi_mcpserver.dll"
+		  AppDescription="Olt Version MCP Server für Navisworks 2026"/>
+	</Components>
+</ApplicationPackage>
