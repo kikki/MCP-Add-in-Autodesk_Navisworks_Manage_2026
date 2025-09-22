@@ -58,23 +58,32 @@ The overall processing chain can be illustrated with the example of **Count by C
 Bridge Layer (Client)
 t_count_by_category(category, scope)
 ↓
+
 RPC Layer
 "get_element_count_by_category"
 ↓
+
 Backend Resolver
 ↓
+
 Generic fallback system
 ↓
+
 Uses IWaabeNavisworksBackend
 ↓
+
 Invokes methods dynamically via Reflection
 ↓
+
 Backends
 ↓
+
 FallbackBackend → GetElementCountByCategoryAsync
 ↓
+
 ReflectionBackend → GetElementCountByCategoryAsync
 ↓
+
 DTO Layer
 ElementCountDto { category, count, scope }
 
