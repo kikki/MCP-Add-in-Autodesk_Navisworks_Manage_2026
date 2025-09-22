@@ -39,7 +39,6 @@ It was created with **Visual Studio 2022** and targets **.NET Framework 4.8**.
 ## Structure of the Solution
 
 MCP_Server/
-|
 
 ├─ waabe_navi_mcp/ → UI integration (ribbon & commands)
 
