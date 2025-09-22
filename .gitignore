@@ -23,3 +23,36 @@ packages/
 
 **/bin/**/*.dll
 **/bin/**/*.exe
+
+#node client
+
+*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*/package-lock.json
+.pnpm-debug.log*
+
+
+.env
+.env.*.local
+
+
+dist/
+build/
+coverage/
+logs/
+*.log
+
+
+.vscode/
+.idea/
+
+
+.DS_Store
+Thumbs.db
+
+*.dxt
+*.tmp
+*.swp

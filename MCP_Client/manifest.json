@@ -2,16 +2,16 @@
   "dxt_version": "0.1",
   "name": "waabe-navisworks-mcp",
   "version": "1.0.0",
-  "description": "Navisworks Manage 2026 MCP Server für Element-Abfragen und Modell-Analyse. Tools werden dynamisch vom Server bereitgestellt für maximale Flexibilität.",
+  "description": "Navisworks Manage 2026 MCP Server for element queries and model analysis. ",
   "author": {
     "name": "WAABE",
-    "email": "kontakt@waabe.com",
+    "email": "n.rube@waabe.com",
     "url": "https://www.waabe.com"
   },
   "license": "MIT",
-  "homepage": "https://www.waabe.com/navisworks-mcp",
-  "documentation": "https://docs.waabe.com/navisworks-mcp",
-  "support": "https://github.com/waabe/navisworks-mcp/issues",
+  "homepage": "https://www.waabe.com",
+  "documentation": "https://github.com/kikki/MCP-Add-in-Autodesk_Navisworks_Manage_2026",
+  "support": "https://github.com/kikki/MCP-Add-in-Autodesk_Navisworks_Manage_2026",
   "icon": "icon.png",
 
   "server": {
@@ -19,7 +19,7 @@
     "entry_point": "server/index.js",
     "mcp_config": {
       "command": "node",
-      "args": ["${__dirname}/server/index.js"],
+      "args": [ "${__dirname}/server/index.js" ],
       "env": {
         "NAVISWORKS_API_PORT": "${user_config.api_port}"
       }
@@ -37,24 +37,51 @@
   },
 
   "tools": [
-    { "name": "get_model_overview", "description": "Gibt eine Übersicht über das geladene Modell (Modelle, Histogramm, Gesamtanzahl)." },
-    { "name": "get_element_count_by_category", "description": "Anzahl der Elemente pro Kategorie (z. B. Doors/Windows/IfcSpace). Input: category, scope." },
-    { "name": "list_properties_for_item", "description": "Eigenschaften eines Items. Input: canonical_id." },
-    {"name": "get_property_distribution_by_category", "description": "Liefert eine vollständige Übersicht aller in Navisworks geladenen Modelle mit ihren Property-Kategorien und den darin enthaltenen Properties" },
+    {
+      "name": "get_model_overview",
+      "description": "Provides an overview of the loaded model (models, histogram, total)."
+    },
+    {
+      "name": "get_element_count_by_category",
+      "description": "Number of elements per category (e.g., Doors/Windows/IfcSpace). Input: category, scope."
+    },
+    {
+      "name": "list_properties_for_item",
+      "description": "all Properties of an item. Input: canonical_id."
+    },
+    {
+      "name": "get_property_distribution_by_category",
+      "description": "Provides a complete overview of all models loaded in Navisworks with their property categories and the properties they contain"
+    },
     {
       "name": "list_items_to_property",
-      "description": "Listet Items anhand Kategorie/Property; optional Modell-/Value-Filter. scope UND modelFilter akzeptieren IDs oder Modellnamen; mehrere per , ; \\n. Input: category, property, scope, modelFilter?, valueFilter?, ignoreCase?, maxResults?"
+      "description": "Lists items by category/property; optional model/value filter. scope AND modelFilter accept IDs or model names; multiple via , ; \\n. Input: category, property, scope, modelFilter?, valueFilter?, ignoreCase?, maxResults?"
     },
-    { "name": "clear_selection", "description": "Leert Selektion (guarded)." },
-    { "name": "get_current_selection_snapshot", "description": "Aktuelle Auswahl (IDs/Handles, Sample-Pfade)." },
-    { "name": "apply_selection", "description": "Setzt Selektion. Input: canonical_id[]." },
-    { "name": "run_simple_clash", "description": "Einfacher Hard-Clash: scopeA vs. scopeB; optional tolerance_m, test_name." },
-    { "name": "get_units_and_tolerances", "description": "Längen/Flächen/Volumen-Einheiten + Toleranzen." }
+    {
+      "name": "clear_selection",
+      "description": "Clears selection (guarded)."
+    },
+    {
+      "name": "get_current_selection_snapshot",
+      "description": "Current selection (IDs/handles, sample paths)."
+    },
+    {
+      "name": "apply_selection",
+      "description": "Sets selection. Input: canonical_id[]."
+    },
+    {
+      "name": "run_simple_clash",
+      "description": "Simple hard clash: scopeA vs. scopeB; optional tolerance_m, test_name. Input: canonical_id[]."
+    },
+    {
+      "name": "get_units_and_tolerances",
+      "description": "Length/area/volume units + tolerances."
+    }
 
 
   ],
 
   "prompts": [
-    
+
   ]
 }
