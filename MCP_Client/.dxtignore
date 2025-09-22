@@ -1,0 +1,13 @@
+# .dxtignore
+*.test.js
+*.test.ts
+coverage/
+*.log
+.env*
+temp/
+docs/
+src/
+tsconfig.json
+.git/
+.gitignore
+README.md

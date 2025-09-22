@@ -1,0 +1,21 @@
+{
+  "name": "waabe-navisworks-mcp-server",
+  "version": "1.0.0",
+  "description": "Navisworks MCP Server for Element Queries",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "inspector": "npx @modelcontextprotocol/inspector node index.js"
+  },
+  "keywords": ["mcp", "navisworks", "api", "desktop-extension"],
+  "author": "WAABE",
+  "license": "MIT"
+}
