@@ -2,6 +2,13 @@
 
 ---
 
+## Demo Video
+A demo of how to use with Claude and Autodesk Navisworks Manage 2026:
+
+[![Watch the video](https://img.youtube.com/vi/vCEfcBXm_tU/0.jpg)](https://youtu.be/vCEfcBXm_tU)
+
+---
+
 ## Object of Investigation
 The object of this Proof of Concept was **Autodesk Navisworks Manage 2026**.  
 This software was selected because:  
